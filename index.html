@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Estudio Privado Tattoo — Mar del Plata</title>
+<meta name="description" content="Estudio Privado Tattoo en Mar del Plata. Black & grey, realismo y covers. Falucho 2218. Turnos por WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230c0c0e'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23c8a24a' font-family='Georgia'>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --negro:#0c0c0e; --carbon:#141416; --gris:#1d1d20; --linea:#2b2b30;
+    --hueso:#ece7dd; --suave:#a49e92; --dorado:#c8a24a; --dorado-suave:#e6cf90;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--negro);color:var(--hueso);font-family:'Inter',system-ui,sans-serif;line-height:1.6}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  h1,h2,.cond{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.04em}
+  .kicker{color:var(--dorado);font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.28em;font-size:.78rem;font-weight:600}
+  /* Header */
+  header{position:sticky;top:0;z-index:40;background:rgba(12,12,14,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-family:'Oswald',sans-serif;font-size:1.15rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+  .logo span{color:var(--dorado)}
+  nav{display:flex;gap:26px;font-size:.9rem;color:var(--suave)}
+  nav a{text-decoration:none}
+  nav a:hover{color:var(--hueso)}
+  @media(max-width:720px){nav{display:none}}
+  .btn{display:inline-block;background:var(--dorado);color:#171204;font-weight:700;text-decoration:none;padding:13px 26px;border-radius:999px;font-size:.95rem;transition:transform .15s ease, background .15s ease}
+  .btn:hover{background:var(--dorado-suave);transform:translateY(-2px)}
+  .btn.ghost{background:transparent;color:var(--hueso);border:1px solid var(--linea)}
+  .btn.ghost:hover{border-color:var(--dorado);color:var(--dorado-suave)}
+  /* Hero */
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,12,14,.45) 0%,rgba(12,12,14,.25) 40%,rgba(12,12,14,.96) 88%)}
+  .hero .content{position:relative;z-index:2;padding:120px 0 54px;width:100%}
+  .hero h1{font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.02;font-weight:700;max-width:12ch}
+  .hero h1 em{font-style:normal;color:var(--dorado)}
+  .hero p.lead{margin:18px 0 26px;font-size:1.12rem;color:#d9d3c6;max-width:56ch}
+  .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .rating{display:inline-flex;align-items:center;gap:10px;background:rgba(20,20,22,.8);border:1px solid var(--linea);border-radius:999px;padding:8px 16px;font-size:.9rem;margin-bottom:22px}
+  .rating b{color:var(--dorado);font-size:1rem}
+  /* Franja datos */
+  .strip{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);background:var(--carbon)}
+  .strip .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .strip .cell{padding:20px 16px;text-align:center;border-left:1px solid var(--linea)}
+  .strip .cell:first-child{border-left:none}
+  .strip .num{font-family:'Oswald',sans-serif;font-size:1.5rem;color:var(--dorado);font-weight:600}
+  .strip .lbl{font-size:.82rem;color:var(--suave);text-transform:uppercase;letter-spacing:.12em}
+  @media(max-width:720px){.strip .grid{grid-template-columns:repeat(2,1fr)}.strip .cell{border-top:1px solid var(--linea)}.strip .cell:nth-child(-n+2){border-top:none}.strip .cell:nth-child(odd){border-left:none}}
+  /* Secciones */
+  section{padding:84px 0}
+  section h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:10px 0 14px}
+  section .intro{color:var(--suave);max-width:62ch}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+  @media(max-width:860px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--carbon);border:1px solid var(--linea);border-radius:16px;padding:28px 24px}
+  .card h3{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.05em;font-size:1.15rem;margin-bottom:10px;color:var(--hueso)}
+  .card h3::before{content:"";display:block;width:34px;height:3px;background:var(--dorado);margin-bottom:14px}
+  .card p{color:var(--suave);font-size:.96rem}
+  /* Galería */
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+  @media(max-width:860px){.gal{grid-template-columns:1fr}}
+  .gal figure{border-radius:16px;overflow:hidden;border:1px solid var(--linea);background:var(--carbon)}
+  .gal img{width:100%;height:420px;object-fit:cover}
+  .gal figcaption{padding:12px 16px;font-size:.88rem;color:var(--suave)}
+  .gal figcaption b{color:var(--hueso)}
+  /* Artistas */
+  .artists{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+  @media(max-width:860px){.artists{grid-template-columns:repeat(2,1fr)}}
+  .artist{background:var(--carbon);border:1px solid var(--linea);border-radius:14px;padding:20px;text-align:center}
+  .artist .name{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:1rem}
+  .artist a{color:var(--dorado);text-decoration:none;font-size:.88rem}
+  /* Info */
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
+  @media(max-width:860px){.info{grid-template-columns:1fr}}
+  .info .box{background:var(--carbon);border:1px solid var(--linea);border-radius:16px;padding:28px 24px}
+  .info h3{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px}
+  .info table{width:100%;border-collapse:collapse;font-size:.97rem}
+  .info td{padding:7px 0;border-bottom:1px solid var(--linea);color:var(--suave)}
+  .info td:last-child{text-align:right;color:var(--hueso);font-weight:600}
+  .info tr:last-child td{border-bottom:none}
+  .info p{color:var(--suave)}
+  .info a.map{color:var(--dorado);text-decoration:none;font-weight:600}
+  /* Cierre */
+  .cierre{background:linear-gradient(180deg,var(--negro),#171307);text-align:center;border-top:1px solid var(--linea)}
+  .cierre h2{max-width:22ch;margin:10px auto 14px}
+  .cierre p{color:var(--suave);max-width:52ch;margin:0 auto 28px}
+  footer{border-top:1px solid var(--linea);padding:30px 0;color:var(--suave);font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:var(--dorado);text-decoration:none}
+  /* Flotante WhatsApp */
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:50;background:#22c05e;color:#08130b;font-weight:700;text-decoration:none;padding:14px 20px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.5);font-size:.95rem}
+  .wa-float:hover{background:#2bd46b}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo">Estudio <span>Privado</span> Tattoo</div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#info">Horarios y ubicación</a>
+    </nav>
+    <a class="btn" href="https://wa.me/5492236200670" target="_blank" rel="noopener">Reservá tu turno</a>
+  </div>
+</header>
+
+<div class="hero">
+  <img class="bg" src="hero.jpg" alt="Trabajos de black and grey realismo del estudio">
+  <div class="wrap content">
+    <div class="rating"><b>★ 4,98</b> en Google · 91 reseñas</div>
+    <div class="kicker">Estudio de tatuajes · Mar del Plata</div>
+    <h1>Black &amp; grey y <em>realismo</em> de autor</h1>
+    <p class="lead">Un estudio privado en Falucho 2218, con artistas residentes especializados en black &amp; grey, realismo y covers. Cada pieza se trabaja con turno, de principio a fin.</p>
+    <div class="ctas">
+      <a class="btn" href="https://wa.me/5492236200670" target="_blank" rel="noopener">Reservá tu turno por WhatsApp</a>
+      <a class="btn ghost" href="#trabajos">Ver trabajos</a>
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap grid">
+    <div class="cell"><div class="num">4,98 ★</div><div class="lbl">Rating en Google</div></div>
+    <div class="cell"><div class="num">91</div><div class="lbl">Reseñas de clientes</div></div>
+    <div class="cell"><div class="num">4</div><div class="lbl">Artistas residentes</div></div>
+    <div class="cell"><div class="num">Falucho 2218</div><div class="lbl">Mar del Plata</div></div>
+  </div>
+</div>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="kicker">Servicios</div>
+    <h2>Lo que hacemos</h2>
+    <p class="intro">Piezas con identidad, trabajadas por artistas que se especializan en lo que hacen. Sin apuro y con turno previo, para que cada trabajo tenga el tiempo que merece.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Black &amp; grey y realismo</h3>
+        <p>La especialidad de la casa: retratos, fauna y piezas de gran formato en negros y grises, con el nivel de detalle que muestran los trabajos del estudio.</p>
+      </div>
+      <div class="card">
+        <h3>Covers y tapados</h3>
+        <p>¿Un tatuaje viejo que ya no te representa? Se evalúa tu caso y se diseña una pieza nueva que lo tape con criterio, aprovechando lo que ya tenés.</p>
+      </div>
+      <div class="card">
+        <h3>Piercing</h3>
+        <p>Perforaciones realizadas en el estudio, con la misma seriedad y cuidado que cada tatuaje.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trabajos" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Trabajos</div>
+    <h2>Piezas recientes del estudio</h2>
+    <p class="intro">Trabajos reales de los artistas residentes. En el Instagram del estudio vas a encontrar el portfolio completo, actualizado semana a semana.</p>
+    <div class="gal">
+      <figure>
+        <img src="trabajo-buzo.jpg" alt="Realismo black and grey: casco de buzo antiguo">
+        <figcaption><b>Realismo black &amp; grey</b> — pieza de gran formato.</figcaption>
+      </figure>
+      <figure>
+        <img src="trabajo-dagas.jpg" alt="Corazón negro atravesado por dagas, estilo blackwork">
+        <figcaption><b>Blackwork</b> — corazón y dagas en negro pleno.</figcaption>
+      </figure>
+      <figure>
+        <img src="trabajo-corazon.jpg" alt="Corazón de línea fina en el hombro">
+        <figcaption><b>Línea fina</b> — piezas chicas y delicadas.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="artistas" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Artistas</div>
+    <h2>Artistas residentes</h2>
+    <p class="intro">Cuatro tatuadores con estilos propios. Mirá el trabajo de cada uno y elegí con quién querés tatuarte.</p>
+    <div class="artists">
+      <div class="artist"><div class="name">Gonzalo Vedia</div><a href="https://www.instagram.com/estudio.privado.tattoo" target="_blank" rel="noopener">@estudio.privado.tattoo</a></div>
+      <div class="artist"><div class="name">Nahuel Matías</div><a href="https://www.instagram.com/nahuelmatiastattoo" target="_blank" rel="noopener">@nahuelmatiastattoo</a></div>
+      <div class="artist"><div class="name">Inkd Maru</div><a href="https://www.instagram.com/inkd_maru" target="_blank" rel="noopener">@inkd_maru</a></div>
+      <div class="artist"><div class="name">Ink Vargas</div><a href="https://www.instagram.com/ink.vargas17" target="_blank" rel="noopener">@ink.vargas17</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="info" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Visitanos</div>
+    <h2>Horarios y ubicación</h2>
+    <div class="info">
+      <div class="box">
+        <h3>Horarios</h3>
+        <table>
+          <tr><td>Lunes a sábados</td><td>14:00 a 19:00</td></tr>
+          <tr><td>Domingos</td><td>Cerrado</td></tr>
+        </table>
+        <p style="margin-top:14px">La atención es con turno previo, así cada pieza tiene su tiempo asignado.</p>
+      </div>
+      <div class="box">
+        <h3>Ubicación</h3>
+        <p>Falucho 2218<br>Mar del Plata, Buenos Aires</p>
+        <p style="margin-top:14px"><a class="map" href="https://www.google.com/maps/search/?api=1&query=Estudio+Privado+Tattoo,+Falucho+2218,+Mar+del+Plata" target="_blank" rel="noopener">Cómo llegar →</a></p>
+        <p style="margin-top:14px">Instagram: <a class="map" href="https://www.instagram.com/estudio.privado.tattoo" target="_blank" rel="noopener">@estudio.privado.tattoo</a><br>Facebook: <a class="map" href="https://www.facebook.com/estudio.privado.tattoo" target="_blank" rel="noopener">Estudio Privado Tattoo</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cierre">
+  <div class="wrap">
+    <div class="kicker">Turnos</div>
+    <h2>Tu próxima pieza empieza con un mensaje</h2>
+    <p>Contanos tu idea, mirá los trabajos de los residentes y reservá tu turno. Te respondemos por WhatsApp.</p>
+    <a class="btn" href="https://wa.me/5492236200670" target="_blank" rel="noopener">Reservá tu turno por WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Estudio Privado Tattoo · Falucho 2218, Mar del Plata</div>
+    <div><a href="https://www.instagram.com/estudio.privado.tattoo" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/estudio.privado.tattoo" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5492236200670" target="_blank" rel="noopener">WhatsApp</a>
+
+</body>
+</html>
